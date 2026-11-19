@@ -108,7 +108,7 @@ More detail: [docs/hardware.md](docs/hardware.md) and [docs/network.md](docs/net
 | | |
 |---|---|
 | ![Homepage dashboard](screenshots/homepage.png) | ![Pi-hole dashboard](screenshots/pihole-dashboard.png) |
-| ![Cockpit](screenshots/cockpit.png) | ![Uptime Kuma](screenshots/uptime-kuma.png) |
+| ![Uptime Kuma](screenshots/uptime-kuma.png) |
 
 ## Repository structure
 
