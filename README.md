@@ -69,15 +69,15 @@ flowchart LR
 
 | Service | Role | Deployment | Access | Status |
 |---|---|---|---|---|
-| [Pi-hole](docs/services/pihole.md) | DNS filtering and ad blocking | Native | LAN `:53`, admin `:80` / `:443` | Operational |
-| [Tailscale](docs/services/tailscale.md) | Secure remote access | Native `tailscaled` | Tailnet | Operational |
-| [Cockpit](docs/services/cockpit.md) | Web-based system administration | Native | LAN `:9090` (HTTPS) | Operational |
-| [Homepage](docs/services/homepage.md) | Service dashboard | Docker Compose | LAN `:3000` | Operational |
-| [Uptime Kuma](docs/services/uptime-kuma.md) | Service monitoring | Docker Compose | LAN `:3001` | Operational |
-| [ntfy](docs/services/ntfy.md) | Self-hosted push notifications | Docker Compose, authentication enabled | LAN `:8080` | Operational |
-| [CUPS](docs/services/cups.md) | Network printing (HP LaserJet 1020) | Native, started on demand | LAN `:631` | Operational |
-| [Samba](docs/services/samba.md) | File sharing | Native | n/a | In progress |
-| [Jellyfin](docs/services/jellyfin.md) | Media streaming | n/a | n/a | Planned |
+| Pi-hole | DNS filtering and ad blocking | Native | LAN `:53`, admin `:80` / `:443` | Operational |
+| Tailscale | Secure remote access | Native `tailscaled` | Tailnet | Operational |
+| Cockpit | Web-based system administration | Native | LAN `:9090` (HTTPS) | Operational |
+| Homepage | Service dashboard | Docker Compose | LAN `:3000` | Operational |
+| Uptime Kuma | Service monitoring | Docker Compose | LAN `:3001` | Operational |
+| ntfy | Self-hosted push notifications | Docker Compose, authentication enabled | LAN `:8080` | Operational |
+| CUPS | Network printing (HP LaserJet 1020) | Native, started on demand | LAN `:631` | Operational |
+| Samba | File sharing | Native | n/a | In progress |
+| Jellyfin | Media streaming | n/a | n/a | Planned |
 | qBittorrent | Download management | n/a | n/a | Planned |
 
 **Pi-hole:** Cloudflare upstreams, StevenBlack and HaGeZi Multi Pro blocklists, query logging enabled. Blocking is verified: a known advertising domain resolves to `0.0.0.0`.
@@ -105,10 +105,14 @@ More detail: [docs/hardware.md](docs/hardware.md) and [docs/network.md](docs/net
 
 ## Screenshots
 
-| | |
-|---|---|
-| ![Homepage dashboard](screenshots/homepage.png) | ![Pi-hole dashboard](screenshots/pihole-dashboard.png) |
-| ![Uptime Kuma](screenshots/uptime-kuma.png) |
+Homepage Dashboard:
+![Homepage dashboard](screenshots/homepage.png)
+ 
+Pi-hole Dashboard:
+![Pi-hole dashboard](screenshots/pihole-dashboard.png) 
+
+Uptime Kuma Status Page:
+![Uptime Kuma](screenshots/uptime-kuma.png) 
 
 ## Repository structure
 
